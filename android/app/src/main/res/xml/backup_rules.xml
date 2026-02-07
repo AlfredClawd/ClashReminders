@@ -1,0 +1,4 @@
+<full-backup-content>
+    <include domain="sharedpref" path="."/>
+    <exclude domain="sharedpref" path="device_protection_preferences.xml"/>
+</full-backup-content>

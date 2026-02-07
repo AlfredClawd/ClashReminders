@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  backend:
+    build: .
+    container_name: clash-reminders-backend
+    ports:
+      - "8000:8000"
+    environment:
+      - COC_API_KEY=${COC_API_KEY}
+      - DATABASE_URL=sqlite:///./data/clash_reminders.db
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3

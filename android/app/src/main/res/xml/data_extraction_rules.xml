@@ -1,0 +1,10 @@
+<data-extraction-rules>
+    <cloud-backup>
+        <include domain="sharedpref" path="."/>
+        <exclude domain="sharedpref" path="device_protection_preferences.xml"/>
+    </cloud-backup>
+    <device-transfer>
+        <include domain="sharedpref" path="."/>
+        <exclude domain="sharedpref" path="device_protection_preferences.xml"/>
+    </device-transfer>
+</data-extraction-rules>
