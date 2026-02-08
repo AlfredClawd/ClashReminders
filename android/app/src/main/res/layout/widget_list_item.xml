@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#1E1E1E"
+    android:padding="6dp"
+    android:layout_marginBottom="2dp">
+
+    <!-- Row 1: Event type + Time remaining -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/item_event_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:text="⚔️ Clan War" />
+
+        <TextView
+            android:id="@+id/item_time_remaining"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF9800"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:text="4h 30m" />
+    </LinearLayout>
+
+    <!-- Row 2: Account display -->
+    <TextView
+        android:id="@+id/item_account_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#BBBBBB"
+        android:textSize="11sp"
+        android:text="Name (#TAG)"
+        android:singleLine="true"
+        android:ellipsize="end" />
+
+    <!-- Row 3: Attacks remaining -->
+    <TextView
+        android:id="@+id/item_attacks_remaining"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#E53935"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        android:text="2 Angriff(e) übrig" />
+
+</LinearLayout>

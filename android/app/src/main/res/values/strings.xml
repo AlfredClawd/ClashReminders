@@ -4,4 +4,6 @@
     <string name="player_tag_hint">Enter Player Tag (e.g., #2PP)</string>
     <string name="welcome">Welcome to ClashReminders!</string>
     <string name="home_title">My Accounts</string>
+    <string name="widget_description">Zeigt fehlende Angriffe in aktiven Events an</string>
+    <string name="widget_name">Missing Hits</string>
 </resources>

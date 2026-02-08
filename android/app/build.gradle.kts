@@ -66,6 +66,9 @@ dependencies {
     implementation(platform("com.google.firebase:firebase-bom:32.7.2"))
     implementation("com.google.firebase:firebase-messaging")
 
+    // WorkManager (widget updates)
+    implementation("androidx.work:work-runtime-ktx:2.9.0")
+
     // Coroutines
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
 
